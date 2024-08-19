@@ -1,4 +1,6 @@
 @import "./settings";
-@import "./components/navigation";
-@import "./components/error";
-@import "./components/footer";
+@import "../components/navigation/navigation";
+@import "../components/error/error";
+@import "../components/footer/footer";
+@import "../components/collapse/collapse";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@700&display=swap');

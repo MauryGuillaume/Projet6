@@ -1,0 +1,31 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.error-title {
+    font-size: 288px;
+    color: #FF6060;
+    font-weight: 800;
+    margin: 0!important;
+    padding-top: 50px;
+}
+
+.oops {
+    color: #FF6060;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.retour-accueil {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .error-title {
+        font-size: 96px;
+    }
+}

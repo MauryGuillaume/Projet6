@@ -1,18 +1,18 @@
 import React from 'react';
 import Navigation from '../components/navigation/Navigation';
 import Footer from '../components/footer/Footer';
-import ContentError from '../components/error/ContentError';
+import DetailLogement from '../components/detail-logement/logement-detail';
 
-const Error = () => {
+const LogementDetail = () => {
     return (
         <div>
             <Navigation />
 
-            <ContentError />
+            <DetailLogement />
 
             <Footer />
         </div>
     );
 };
 
-export default Error;
+export default LogementDetail;

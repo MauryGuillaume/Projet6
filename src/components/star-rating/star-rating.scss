@@ -1,0 +1,23 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+  
+    .star-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 2px;
+    }
+  
+    .star-full {
+      fill: #ff6060;
+    }
+  
+    .star-empty {
+      fill: #E3E3E3;
+    }
+    
+    .star-half {
+      fill: #ff6060;
+    }
+  }
+  

@@ -1,0 +1,138 @@
+.logement-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1240px;
+  margin: auto;
+
+  .collapse-details {
+    display: flex;
+    justify-content: space-between;
+
+    .equipments, .description {
+      width: 47.5%;
+    }
+  }
+
+  .cover-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  .logement-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .first-column {
+      display: flex;
+      flex-direction: column;
+
+      .tags ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .tags li {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 15px;
+        color: white;
+        font-weight: 700;
+        background-color: #ff6060;
+        border-radius: 10px;
+        font-size: 14px;
+      }
+      
+    }
+
+    .second-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 0px;
+      text-align: left;
+      color: #ff6060;
+      font-weight: 500;
+    }
+
+    .host-info {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      justify-content: flex-end;
+
+      p {
+        width: 70px;
+        color: #ff6060;
+        font-weight: 600;
+      }
+
+      .host-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    .location {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+    }
+
+    .equipments, .tags {
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      title {
+        font-size: 18px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          background: #f0f0f0;
+          margin: 5px 0;
+          padding: 10px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .logement-info {
+    flex-direction: column;
+  }
+  .logement-detail .logement-info .second-column {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .collapse-details {
+    flex-direction: column;
+    .equipments, .description {
+      width: 100%!important;
+      .collapse-container {
+        padding: 0!important;
+      }
+    }
+  }
+}
